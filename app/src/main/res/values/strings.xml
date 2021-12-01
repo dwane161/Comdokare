@@ -1,16 +1,36 @@
 <resources>
-    <string name="app_name">Comdokare</string>
+    <string name="app_name">Comedo Kare</string>
     <string name="title_activity_main2">MainActivity2</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_activity_scanned_product">ScannedProductActivity</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
+    <string name="first_fragment_label">Fi rst Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Clave</string>
+    <string name="prompt_password_confirm">Confirmar clave</string>
+    <string name="prompt_name">Nombre completo</string>
+    <string name="action_sign_in">Iniciar sesión</string>
+    <string name="action_sign_up">Crear cuenta</string>
+    <string name="action_sign_in_short">Iniciar sesión</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Usuario no valido</string>
+    <string name="invalid_password">Clave debe de tener más de 5 caracteres</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="sign_in_to_comedokare">Iniciar sesión en Comedo Kare</string>
+    <string name="welcome_to_comedokare">Bienvenido a CommedoKare</string>
+    <string name="create_account">Crear una cuenta</string>
+    <string name="account_already">¿Tienes una cuenta? Inicia sesión</string>
+    <string name="title_activity_splach_screen">SplachScreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="is_medic">Es medico?</string>
 </resources>

@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
                         myIntent.putExtra("scanned-product-key", product); //Optional parameters
                         MainActivity.this.startActivity(myIntent);
                     } else {
-                        Toast.makeText(getApplicationContext(), "Producto no encontrado", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getBaseContext(), "Producto no encontrado", Toast.LENGTH_SHORT).show();
                     }
                 }
 
