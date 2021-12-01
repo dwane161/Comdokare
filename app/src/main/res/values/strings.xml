@@ -21,7 +21,7 @@
     <string name="action_sign_in">Iniciar sesión</string>
     <string name="action_sign_up">Crear cuenta</string>
     <string name="action_sign_in_short">Iniciar sesión</string>
-    <string name="welcome">"Welcome !"</string>
+    <string name="welcome">"Bienvenido: "</string>
     <string name="invalid_username">Usuario no valido</string>
     <string name="invalid_password">Clave debe de tener más de 5 caracteres</string>
     <string name="login_failed">"Login failed"</string>
@@ -33,4 +33,15 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="is_medic">Es medico?</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Comedo Kare</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Comedo Kare</string>
+    <string name="menu_gallery">Escanear</string>
+    <string name="menu_slideshow">Listado</string>
 </resources>

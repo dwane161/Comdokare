@@ -23,6 +23,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.comdokare.HomeActivity;
 import com.example.comdokare.MainActivity;
 import com.example.comdokare.R;
 import com.example.comdokare.RegisterActivity;
@@ -85,7 +86,7 @@ public class LoginActivity extends AppCompatActivity {
                     updateUiWithUser(loginResult.getSuccess());
                 }
                 if (loginResult.getError() == null) {
-                    Intent myIntent = new Intent(LoginActivity.this, MainActivity.class);
+                    Intent myIntent = new Intent(LoginActivity.this, HomeActivity.class);
                     LoginActivity.this.startActivity(myIntent);
                 }
             }
