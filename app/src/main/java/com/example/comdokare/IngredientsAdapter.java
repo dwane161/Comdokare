@@ -1,12 +1,15 @@
 package com.example.comdokare;
 
 import android.content.res.AssetManager;
+import android.content.res.ColorStateList;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
@@ -16,11 +19,10 @@ import java.io.InputStream;
 import java.util.List;
 
 
-public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHolder> {
+public class IngredientsAdapter extends RecyclerView.Adapter<IngredientsAdapter.ViewHolder> {
 
-    private final List<Product> localDataSet;
-    private static RecyclerViewClickListener itemListener;
-    private static AssetManager getAssets;
+    private final List<Ingredients> localDataSet;
+    private static IngredientsAdapter.RecyclerViewClickListener itemListener;
 
 
     public interface RecyclerViewClickListener {
@@ -31,31 +33,30 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
      * Provide a reference to the type of views that you are using
      * (custom ViewHolder).
      */
-    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener  {
         private final TextView tvName;
-        private final TextView tvBarCode;
-        private final ImageView imageView;
+        private final TextView tvDescription;
+        private final ProgressBar progressBar;
 
         public ViewHolder(View view) {
             super(view);
 
             tvName = (TextView) view.findViewById(R.id.textView);
-            tvBarCode = (TextView) view.findViewById(R.id.textView4);
-            imageView = (ImageView) view.findViewById(R.id.imageView4);
+            tvDescription = (TextView) view.findViewById(R.id.textView4);
+            progressBar = (ProgressBar) view.findViewById(R.id.progressBar2);
             view.setOnClickListener(this);
-
         }
 
         public TextView getTvName() {
             return tvName;
         }
 
-        public TextView getTvBarCode() {
-            return tvBarCode;
+        public TextView getTvDescription() {
+            return tvDescription;
         }
 
-        public ImageView getImageView() {
-            return imageView;
+        public ProgressBar getProgressBar() {
+            return progressBar;
         }
 
         @Override
@@ -71,16 +72,15 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
      * @param dataSet String[] containing the data to populate views to be used
      *                by RecyclerView.
      */
-    public ProductAdapter(List<Product> dataSet, RecyclerViewClickListener itListener, AssetManager assets) {
+    public IngredientsAdapter(List<Ingredients> dataSet, IngredientsAdapter.RecyclerViewClickListener itListener) {
         localDataSet = dataSet;
         itemListener = itListener;
-        getAssets = assets;
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
         View view = LayoutInflater.from(viewGroup.getContext())
-                .inflate(R.layout.text_row_item, viewGroup, false);
+                .inflate(R.layout.text_row_item_ingredients, viewGroup, false);
 
         return new ViewHolder(view);
     }
@@ -90,12 +90,10 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
     public void onBindViewHolder(ViewHolder viewHolder, final int position) {
 
         viewHolder.getTvName().setText(localDataSet.get(position).name);
-        viewHolder.getTvBarCode().setText(localDataSet.get(position).barcodeId);
-        try {
-            viewHolder.imageView.setImageBitmap(getBitmapFromAssets(localDataSet.get(position).imageResource));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        viewHolder.getTvDescription().setText(localDataSet.get(position).description);
+        int progress = Integer.parseInt(localDataSet.get(position).comedogenity) * 20;
+        viewHolder.getProgressBar().setProgress(progress);
+        viewHolder.getProgressBar().setProgressTintList(ColorStateList.valueOf(getColor(progress)));
     }
 
     @Override
@@ -103,18 +101,23 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
         return localDataSet.size();
     }
 
-    public Product getItem(int position) {
+    public Ingredients getItem(int position) {
         return localDataSet.get(position);
     }
 
-
-    public Bitmap getBitmapFromAssets(String fileName) throws IOException {
-        AssetManager assetManager = getAssets;
-
-        InputStream istr = assetManager.open(fileName);
-        Bitmap bitmap = BitmapFactory.decodeStream(istr);
-        istr.close();
-
-        return bitmap;
+    public int getColor(int value) {
+        if (value <= 20) {
+            return Color.GREEN;
+        } else if (value <= 40) {
+            return Color.BLUE;
+        } else if (value <= 60) {
+            return Color.YELLOW;
+        } else if (value <= 80) {
+            return Color.RED;
+        } else if (value <= 100) {
+            return Color.BLACK;
+        }
+        return Color.BLUE;
     }
+
 }

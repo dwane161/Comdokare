@@ -53,7 +53,7 @@ public class SlideshowFragment extends Fragment implements ProductAdapter.Recycl
         getActivity().startActivity(myIntent);
     }
 
-    private enum LayoutManagerType {
+    public enum LayoutManagerType {
         GRID_LAYOUT_MANAGER,
         LINEAR_LAYOUT_MANAGER
     }
@@ -96,9 +96,9 @@ public class SlideshowFragment extends Fragment implements ProductAdapter.Recycl
                     if (product != null) {
                         ArrayList<Product> products = new ArrayList<Product>();
                         products.add(product);
-                        rvProducts.setAdapter(new ProductAdapter(products, SlideshowFragment.this));
+                        rvProducts.setAdapter(new ProductAdapter(products, SlideshowFragment.this, getActivity().getAssets()));
                     } else {
-                        rvProducts.setAdapter(new ProductAdapter(new ArrayList<Product>(), SlideshowFragment.this));
+                        rvProducts.setAdapter(new ProductAdapter(new ArrayList<Product>(), SlideshowFragment.this, getActivity().getAssets()));
                     }
 
                 }
@@ -115,7 +115,7 @@ public class SlideshowFragment extends Fragment implements ProductAdapter.Recycl
         Type type = new TypeToken<List<Product>>() {
         }.getType();
         List<Product> modelObject = new Gson().fromJson(data, type);
-        rvProducts.setAdapter(new ProductAdapter(modelObject, this));
+        rvProducts.setAdapter(new ProductAdapter(modelObject, this, getActivity().getAssets()));
         return modelObject;
     }
 

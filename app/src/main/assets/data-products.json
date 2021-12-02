@@ -1,7 +1,37 @@
 [
   {
-    "name": "Palmer's Olive Oil Formula",
+    "name": "Asepxia",
     "barcodeId": "010181025860",
+    "imageResource": "asepxia.jpg",
+    "description": "Producto antiacneico",
+    "ingredients": [
+      {
+        "name": "Alcohol Cetearílico",
+        "comedogenity": "3",
+        "description": "el alcohol cetearílico es una cera emulsionante y estabilizadora producida a partir de la reducción de aceites vegetales y ceras naturales. Se utiliza como emoliente y para dar una alta viscosidad al producto. Ceteareth 20 se utiliza como emoliente, emulsionante y lubricante. La combinación es particularmente comedogénica"
+      },
+      {
+        "name": "Aceite de argán",
+        "comedogenity": "1",
+        "description": "El aceite de Argán, también conocido como oro del desierto, es un producto cosmético y comestible que se obtiene tras un proceso de secado de los frutos del árbol de Argán (Argania spinosa) expuestos al sol. Una vez secos, se extrae la semilla de la almendra manualmente y pasa a prensarse en frío. Esto constituye un proceso mecánico ausente de productos químicos.\n\nEn cuanto a sus propiedades, el aceite de Argán está constituido por un alto porcentaje de ácidos grasos esenciales (80 por ciento) y tocoferoles (Vitamina E). Los tocoferoles son antioxidantes.\n\nNo genera comedones, eflorescencia primaria del acné, por lo que es apto para pieles grasas con tendencia acnéica. No engrasa y penetra fácilmente en la piel.\nEs cicatrizante, por lo que es recomendable para ayudar a la cicatrización de quemaduras y heridas, así como para la prevención y disminución de estrías.\n \nEl aceite de Argán es ideal para eliminar y prevenir los signos del envejecimiento cutáneo. Es decir, actúa como producto antiedad, disminuyendo y previniendo la aparición de arrugas y aportando luminosidad, flexibilidad y suavidad al rostro. Es muy adecuado para calmar eritemas, es decir, irritaciones cutáneas. Es antiséptico y antifúngico.\n"
+      },
+      {
+        "name": "Estearato de glicerilo ",
+        "comedogenity": "5",
+        "description": "El estearato de glicerol se utiliza como emulsionante o emoliente no iónico en cosméticos. Es muy utilizado en cremas hidratantes y también se encuentra en el cuidado del cabello por sus propiedades antiestáticas. Puede ser derivado de aceite de palma, de oliva o de colza ... Está autorizado de forma ecológica.\nEl estearato de glicerilo SE es un monoéster de glicerina y ácido esteárico. SE significa calidad de formulación especial del estearato de glicerilo. Se conoce como grado de Auto-Emulsificador. Se diferencia de la variedad no SE por la adición de estearato de potasio. Está disponible en microgránulos con un color blanquecino.\nEs principalmente un emulsionante y se utiliza para gestionar la fase de aceite y agua conjuntamente. Con la calidad especial SE, mejora la estabilidad de un producto, así como el grosor del mismo, lo que puede ayudar a verse y sentirse mejor que un producto menos grueso. Puede mezclarse con otros emulsionantes."
+      },
+      {
+        "name": "Azufre coloidal",
+        "comedogenity": "4",
+        "description": "Es un activo antiacné que se utiliza en la elaboración de cremas, lociones y ungüentos antiacné. también se aplica en champús anticaspa y productos para el cuero cabelludo como ingrediente para el control de la caspa, la dermatitis seborreica o la psoriasis. Se suministra en forma de polvo. Este producto es fácilmente dispersable en la mayoría de los disolventes. Es hipoalergénico, queratolítico y ofrece una menor incidencia de alergias que el peróxido de benzoilo. Este producto actúa en sinergia con el ácido salicílico para el control de la caspa.\nEs un ingrediente común utilizado en las preparaciones para el acné, ya que reduce la actividad de las glándulas sebáceas y disuelve la capa superficial de la piel de la mayoría de las células superiores. Es interesante que mientras hace esto, también muestra la capacidad de tapar los poros."
+      }
+    ]
+  },
+  {
+    "name": "Biretix",
+    "barcodeId": "7460528010296",
+    "imageResource": "biretix.jpg",
+    "description": "Producto antiacneico",
     "ingredients": [
       {
         "name": "Alcohol Cetearílico",
@@ -26,8 +56,10 @@
     ]
   },
   {
-    "name": "Palmer's Olive Oil Formula 2",
+    "name": "Clarina",
     "barcodeId": "7460528010296",
+    "imageResource": "clarina.jpg",
+    "description": "Producto antiacneico",
     "ingredients": [
       {
         "name": "Alcohol Cetearílico",
@@ -52,86 +84,10 @@
     ]
   },
   {
-    "name": "Palmer's Olive Oil Formula 3",
+    "name": "Xicanil",
     "barcodeId": "7460528010296",
-    "ingredients": [
-      {
-        "name": "Alcohol Cetearílico",
-        "comedogenity": "2",
-        "description": "el alcohol cetearílico es una cera emulsionante y estabilizadora producida a partir de la reducción de aceites vegetales y ceras naturales. Se utiliza como emoliente y para dar una alta viscosidad al producto. Ceteareth 20 se utiliza como emoliente, emulsionante y lubricante. La combinación es particularmente comedogénica"
-      },
-      {
-        "name": "Aceite de argán",
-        "comedogenity": "0",
-        "description": "El aceite de Argán, también conocido como oro del desierto, es un producto cosmético y comestible que se obtiene tras un proceso de secado de los frutos del árbol de Argán (Argania spinosa) expuestos al sol. Una vez secos, se extrae la semilla de la almendra manualmente y pasa a prensarse en frío. Esto constituye un proceso mecánico ausente de productos químicos.\n\nEn cuanto a sus propiedades, el aceite de Argán está constituido por un alto porcentaje de ácidos grasos esenciales (80 por ciento) y tocoferoles (Vitamina E). Los tocoferoles son antioxidantes.\n\nNo genera comedones, eflorescencia primaria del acné, por lo que es apto para pieles grasas con tendencia acnéica. No engrasa y penetra fácilmente en la piel.\nEs cicatrizante, por lo que es recomendable para ayudar a la cicatrización de quemaduras y heridas, así como para la prevención y disminución de estrías.\n \nEl aceite de Argán es ideal para eliminar y prevenir los signos del envejecimiento cutáneo. Es decir, actúa como producto antiedad, disminuyendo y previniendo la aparición de arrugas y aportando luminosidad, flexibilidad y suavidad al rostro. Es muy adecuado para calmar eritemas, es decir, irritaciones cutáneas. Es antiséptico y antifúngico.\n"
-      },
-      {
-        "name": "Estearato de glicerilo ",
-        "comedogenity": "0",
-        "description": "El estearato de glicerol se utiliza como emulsionante o emoliente no iónico en cosméticos. Es muy utilizado en cremas hidratantes y también se encuentra en el cuidado del cabello por sus propiedades antiestáticas. Puede ser derivado de aceite de palma, de oliva o de colza ... Está autorizado de forma ecológica.\nEl estearato de glicerilo SE es un monoéster de glicerina y ácido esteárico. SE significa calidad de formulación especial del estearato de glicerilo. Se conoce como grado de Auto-Emulsificador. Se diferencia de la variedad no SE por la adición de estearato de potasio. Está disponible en microgránulos con un color blanquecino.\nEs principalmente un emulsionante y se utiliza para gestionar la fase de aceite y agua conjuntamente. Con la calidad especial SE, mejora la estabilidad de un producto, así como el grosor del mismo, lo que puede ayudar a verse y sentirse mejor que un producto menos grueso. Puede mezclarse con otros emulsionantes."
-      },
-      {
-        "name": "Azufre coloidal",
-        "comedogenity": "3",
-        "description": "Es un activo antiacné que se utiliza en la elaboración de cremas, lociones y ungüentos antiacné. también se aplica en champús anticaspa y productos para el cuero cabelludo como ingrediente para el control de la caspa, la dermatitis seborreica o la psoriasis. Se suministra en forma de polvo. Este producto es fácilmente dispersable en la mayoría de los disolventes. Es hipoalergénico, queratolítico y ofrece una menor incidencia de alergias que el peróxido de benzoilo. Este producto actúa en sinergia con el ácido salicílico para el control de la caspa.\nEs un ingrediente común utilizado en las preparaciones para el acné, ya que reduce la actividad de las glándulas sebáceas y disuelve la capa superficial de la piel de la mayoría de las células superiores. Es interesante que mientras hace esto, también muestra la capacidad de tapar los poros."
-      }
-    ]
-  },
-  {
-    "name": "Palmer's Olive Oil Formula 4",
-    "barcodeId": "7460528010296",
-    "ingredients": [
-      {
-        "name": "Alcohol Cetearílico",
-        "comedogenity": "2",
-        "description": "el alcohol cetearílico es una cera emulsionante y estabilizadora producida a partir de la reducción de aceites vegetales y ceras naturales. Se utiliza como emoliente y para dar una alta viscosidad al producto. Ceteareth 20 se utiliza como emoliente, emulsionante y lubricante. La combinación es particularmente comedogénica"
-      },
-      {
-        "name": "Aceite de argán",
-        "comedogenity": "0",
-        "description": "El aceite de Argán, también conocido como oro del desierto, es un producto cosmético y comestible que se obtiene tras un proceso de secado de los frutos del árbol de Argán (Argania spinosa) expuestos al sol. Una vez secos, se extrae la semilla de la almendra manualmente y pasa a prensarse en frío. Esto constituye un proceso mecánico ausente de productos químicos.\n\nEn cuanto a sus propiedades, el aceite de Argán está constituido por un alto porcentaje de ácidos grasos esenciales (80 por ciento) y tocoferoles (Vitamina E). Los tocoferoles son antioxidantes.\n\nNo genera comedones, eflorescencia primaria del acné, por lo que es apto para pieles grasas con tendencia acnéica. No engrasa y penetra fácilmente en la piel.\nEs cicatrizante, por lo que es recomendable para ayudar a la cicatrización de quemaduras y heridas, así como para la prevención y disminución de estrías.\n \nEl aceite de Argán es ideal para eliminar y prevenir los signos del envejecimiento cutáneo. Es decir, actúa como producto antiedad, disminuyendo y previniendo la aparición de arrugas y aportando luminosidad, flexibilidad y suavidad al rostro. Es muy adecuado para calmar eritemas, es decir, irritaciones cutáneas. Es antiséptico y antifúngico.\n"
-      },
-      {
-        "name": "Estearato de glicerilo ",
-        "comedogenity": "0",
-        "description": "El estearato de glicerol se utiliza como emulsionante o emoliente no iónico en cosméticos. Es muy utilizado en cremas hidratantes y también se encuentra en el cuidado del cabello por sus propiedades antiestáticas. Puede ser derivado de aceite de palma, de oliva o de colza ... Está autorizado de forma ecológica.\nEl estearato de glicerilo SE es un monoéster de glicerina y ácido esteárico. SE significa calidad de formulación especial del estearato de glicerilo. Se conoce como grado de Auto-Emulsificador. Se diferencia de la variedad no SE por la adición de estearato de potasio. Está disponible en microgránulos con un color blanquecino.\nEs principalmente un emulsionante y se utiliza para gestionar la fase de aceite y agua conjuntamente. Con la calidad especial SE, mejora la estabilidad de un producto, así como el grosor del mismo, lo que puede ayudar a verse y sentirse mejor que un producto menos grueso. Puede mezclarse con otros emulsionantes."
-      },
-      {
-        "name": "Azufre coloidal",
-        "comedogenity": "3",
-        "description": "Es un activo antiacné que se utiliza en la elaboración de cremas, lociones y ungüentos antiacné. también se aplica en champús anticaspa y productos para el cuero cabelludo como ingrediente para el control de la caspa, la dermatitis seborreica o la psoriasis. Se suministra en forma de polvo. Este producto es fácilmente dispersable en la mayoría de los disolventes. Es hipoalergénico, queratolítico y ofrece una menor incidencia de alergias que el peróxido de benzoilo. Este producto actúa en sinergia con el ácido salicílico para el control de la caspa.\nEs un ingrediente común utilizado en las preparaciones para el acné, ya que reduce la actividad de las glándulas sebáceas y disuelve la capa superficial de la piel de la mayoría de las células superiores. Es interesante que mientras hace esto, también muestra la capacidad de tapar los poros."
-      }
-    ]
-  },
-  {
-    "name": "Palmer's Olive Oil Formula 5",
-    "barcodeId": "7460528010296",
-    "ingredients": [
-      {
-        "name": "Alcohol Cetearílico",
-        "comedogenity": "2",
-        "description": "el alcohol cetearílico es una cera emulsionante y estabilizadora producida a partir de la reducción de aceites vegetales y ceras naturales. Se utiliza como emoliente y para dar una alta viscosidad al producto. Ceteareth 20 se utiliza como emoliente, emulsionante y lubricante. La combinación es particularmente comedogénica"
-      },
-      {
-        "name": "Aceite de argán",
-        "comedogenity": "0",
-        "description": "El aceite de Argán, también conocido como oro del desierto, es un producto cosmético y comestible que se obtiene tras un proceso de secado de los frutos del árbol de Argán (Argania spinosa) expuestos al sol. Una vez secos, se extrae la semilla de la almendra manualmente y pasa a prensarse en frío. Esto constituye un proceso mecánico ausente de productos químicos.\n\nEn cuanto a sus propiedades, el aceite de Argán está constituido por un alto porcentaje de ácidos grasos esenciales (80 por ciento) y tocoferoles (Vitamina E). Los tocoferoles son antioxidantes.\n\nNo genera comedones, eflorescencia primaria del acné, por lo que es apto para pieles grasas con tendencia acnéica. No engrasa y penetra fácilmente en la piel.\nEs cicatrizante, por lo que es recomendable para ayudar a la cicatrización de quemaduras y heridas, así como para la prevención y disminución de estrías.\n \nEl aceite de Argán es ideal para eliminar y prevenir los signos del envejecimiento cutáneo. Es decir, actúa como producto antiedad, disminuyendo y previniendo la aparición de arrugas y aportando luminosidad, flexibilidad y suavidad al rostro. Es muy adecuado para calmar eritemas, es decir, irritaciones cutáneas. Es antiséptico y antifúngico.\n"
-      },
-      {
-        "name": "Estearato de glicerilo ",
-        "comedogenity": "0",
-        "description": "El estearato de glicerol se utiliza como emulsionante o emoliente no iónico en cosméticos. Es muy utilizado en cremas hidratantes y también se encuentra en el cuidado del cabello por sus propiedades antiestáticas. Puede ser derivado de aceite de palma, de oliva o de colza ... Está autorizado de forma ecológica.\nEl estearato de glicerilo SE es un monoéster de glicerina y ácido esteárico. SE significa calidad de formulación especial del estearato de glicerilo. Se conoce como grado de Auto-Emulsificador. Se diferencia de la variedad no SE por la adición de estearato de potasio. Está disponible en microgránulos con un color blanquecino.\nEs principalmente un emulsionante y se utiliza para gestionar la fase de aceite y agua conjuntamente. Con la calidad especial SE, mejora la estabilidad de un producto, así como el grosor del mismo, lo que puede ayudar a verse y sentirse mejor que un producto menos grueso. Puede mezclarse con otros emulsionantes."
-      },
-      {
-        "name": "Azufre coloidal",
-        "comedogenity": "3",
-        "description": "Es un activo antiacné que se utiliza en la elaboración de cremas, lociones y ungüentos antiacné. también se aplica en champús anticaspa y productos para el cuero cabelludo como ingrediente para el control de la caspa, la dermatitis seborreica o la psoriasis. Se suministra en forma de polvo. Este producto es fácilmente dispersable en la mayoría de los disolventes. Es hipoalergénico, queratolítico y ofrece una menor incidencia de alergias que el peróxido de benzoilo. Este producto actúa en sinergia con el ácido salicílico para el control de la caspa.\nEs un ingrediente común utilizado en las preparaciones para el acné, ya que reduce la actividad de las glándulas sebáceas y disuelve la capa superficial de la piel de la mayoría de las células superiores. Es interesante que mientras hace esto, también muestra la capacidad de tapar los poros."
-      }
-    ]
-  },
-  {
-    "name": "Palmer's Olive Oil Formula 6",
-    "barcodeId": "7460528010296",
+    "imageResource": "xicanil.jpg",
+    "description": "Producto antiacneico",
     "ingredients": [
       {
         "name": "Alcohol Cetearílico",
