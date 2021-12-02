@@ -44,4 +44,6 @@
     <string name="menu_home">Comedo Kare</string>
     <string name="menu_gallery">Escanear</string>
     <string name="menu_slideshow">Listado</string>
+    <string name="visitor_enter">Entrar como invitado</string>
+    <string name="element_text">Text</string>
 </resources>

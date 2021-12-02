@@ -55,6 +55,7 @@ public class LoginActivity extends AppCompatActivity {
         final Button loginButton = binding.login;
         final ProgressBar loadingProgressBar = binding.loading;
         final TextView tvCreateAccount = binding.textView2;
+        final TextView tvGuestEnter = binding.textView3;
 
         loginViewModel.getLoginFormState().observe(this, new Observer<LoginFormState>() {
             @Override
@@ -137,6 +138,15 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(LoginActivity.this, RegisterActivity.class);
+                LoginActivity.this.startActivity(myIntent);
+            }
+        });
+
+        assert tvGuestEnter != null;
+        tvGuestEnter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(LoginActivity.this, HomeActivity.class);
                 LoginActivity.this.startActivity(myIntent);
             }
         });

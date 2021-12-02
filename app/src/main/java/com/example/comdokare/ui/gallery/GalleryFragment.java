@@ -51,7 +51,7 @@ public class GalleryFragment extends Fragment {
     private static final int REQUEST_CAMERA_PERMISSION = 201;
     private ToneGenerator toneGen1;
     private String barcodeData;
-    boolean productScanned = false;
+    Boolean checkingBarCode = false;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -63,7 +63,6 @@ public class GalleryFragment extends Fragment {
         toneGen1 = new ToneGenerator(AudioManager.STREAM_MUSIC, 100);
         surfaceView = binding.surfaceView;
         initialiseDetectorsAndSources();
-        productScanned = false;
         return root;
     }
 
@@ -124,21 +123,21 @@ public class GalleryFragment extends Fragment {
             @Override
             public void receiveDetections(Detector.Detections<Barcode> detections) {
                 final SparseArray<Barcode> barcodes = detections.getDetectedItems();
-                if (barcodes.size() != 0) {
-
+                if (barcodes.size() != 0 && !checkingBarCode) {
+                    checkingBarCode = true;
                     if (barcodes.valueAt(0).email != null) {
                         barcodeData = barcodes.valueAt(0).email.address;
                     } else {
 
                         barcodeData = barcodes.valueAt(0).displayValue;
                     }
-                    toneGen1.startTone(ToneGenerator.TONE_CDMA_PIP, 150);
                     Product product = getProduct(barcodeData);
 
                     if (product != null) {
-                        productScanned = true;
                         Intent myIntent = new Intent(getActivity().getBaseContext(), ScannedProductActivity.class);
+                        toneGen1.startTone(ToneGenerator.TONE_CDMA_PIP, 150);
                         myIntent.putExtra("scanned-product-key", product);
+                        checkingBarCode = false;
                         getActivity().startActivity(myIntent);
                     } else {
                         Toast.makeText(getActivity().getBaseContext(), "Producto no encontrado", Toast.LENGTH_SHORT).show();
