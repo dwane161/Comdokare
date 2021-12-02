@@ -43,6 +43,7 @@
         <activity
             android:name=".ScannedProductActivity"
             android:exported="false"
+            android:launchMode="singleInstance"
             android:label="@string/title_activity_scanned_product"
             android:parentActivityName=".MainActivity" />
 

@@ -42,6 +42,7 @@ public class SlideshowFragment extends Fragment implements ProductAdapter.Recycl
     private FragmentSlideshowBinding binding;
     private RecyclerView rvProducts;
     private SearchView searchView;
+    protected LayoutManagerType mCurrentLayoutManagerType;
 
     @Override
     public void recyclerViewListClicked(View v, int position) {
@@ -58,7 +59,6 @@ public class SlideshowFragment extends Fragment implements ProductAdapter.Recycl
         LINEAR_LAYOUT_MANAGER
     }
 
-    protected LayoutManagerType mCurrentLayoutManagerType;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
